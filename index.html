@@ -372,10 +372,11 @@ function filterCategory(category,button){
 
 function addCart(name){
   cart.push(name);
-  document.getElementById("cartCount").textContent=cart.length;
-  showToast(name+" ditambahkan ke keranjang");
-}
 
+  document.getElementById("cartCount").textContent = cart.length;
+
+  showToast("Berhasil ditambahkan: " + name);
+}
 function showCart(){
   if(cart.length===0){
     showToast("Keranjang kamu masih kosong.");
